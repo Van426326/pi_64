@@ -5,11 +5,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("jar")
+@RequestMapping("/test")
 public class TestController {
 
-    @GetMapping("/test")
+    @GetMapping("")
     public Object testAnnotation(){
-        return new String("you got me    ---from van's RaspBerry");
+        return new String("you got me!!!    ---from van's Raspberry");
     }
 }
