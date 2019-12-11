@@ -464,7 +464,7 @@
             hash = 31 * hash + messageSender.charCodeAt(i);
         }
         var index = Math.abs(hash % colors.length);
-        return colors[chat];
+        return colors[index];
     }
 
     usernameForm.addEventListener('submit', connect, true)
