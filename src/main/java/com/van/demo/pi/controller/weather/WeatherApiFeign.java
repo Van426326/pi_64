@@ -8,11 +8,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 public interface WeatherApiFeign {
 
     @GetMapping
-    String getWeatherJson(@RequestParam String version,
-                                   @RequestParam String cityid,
-                                   @RequestParam String city,
-                                   @RequestParam String appid,
-                                   @RequestParam String appsecret);
+    String getWeatherJson(@RequestParam(value = "version") String version,
+                           @RequestParam(value = "cityid") String cityId,
+                           @RequestParam(value = "city") String city,
+                           @RequestParam(value = "appid") String appId,
+                           @RequestParam(value = "appsecret") String appSecret);
 
 
 
